@@ -2,9 +2,10 @@
 
 function writeTofile($message) {
    try {
-      $file = fopen("contacts.txt", "w");
-      fwrite($file, $message);// . "\n")
-      fclose($file);
+      //$file = fopen("contacts.txt", "a");
+      //fwrite($file, $message);// . "\n")
+      file_put_contents("contacts.txt", $message);
+      //fclose($file);
    }catch(Exception $ex){
       echo $ex->getMessage();
       return $ex->getMessage();
