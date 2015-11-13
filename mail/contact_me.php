@@ -7,9 +7,9 @@ function writeTofile($message) {
       fclose($file);
    }catch(Exception $ex){
       echo $ex->getMessage();
-      return false
+      return $ex->getMessage();
    }
-   return true
+   return "true";
 }
 
 // Check for empty fields
