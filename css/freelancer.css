@@ -458,3 +458,6 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+ul.list-items-none {
+    list-style:none;
+}
