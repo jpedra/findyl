@@ -1,4 +1,17 @@
 <?php
+
+function writeTofile($message) {
+   try {
+      $file = fopen("contacts.txt", "w");
+      fwrite($file, $message);// . "\n")
+      fclose($file);
+   }catch(Exception $ex){
+      echo $ex->getMessage();
+      return false
+   }
+   return true
+}
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
@@ -22,10 +35,7 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: john.pedra@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
 
-$file = fopen("contacts.txt", "w")
-fwrite($file, $email_body . "\n")
-fclose($file)
-
-mail($to,$email_subject,$email_body,$headers);
-return true;			
+return writeTofile($email_body);
+//mail($to,$email_subject,$email_body,$headers);
+//return true;			
 ?>
