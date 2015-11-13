@@ -2,6 +2,7 @@
  * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * original colour: #18bc9c;;
  */
 
 body {
@@ -22,7 +23,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #b1ccd9;
 }
 
 h1,
@@ -63,7 +64,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #b1ccd9;
 }
 
 hr.star-primary {
@@ -82,7 +83,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #b1ccd9;
 }
 
 header .container {
@@ -181,7 +182,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #b1ccd9;
 }
 
 section.success a,
@@ -274,7 +275,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #b1ccd9;
     background: #fff;
 }
 
@@ -327,7 +328,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #b1ccd9;
 }
 
 form .row:first-child .floating-label-form-group {
