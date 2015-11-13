@@ -4,7 +4,7 @@ function writeTofile($message) {
    try {
       //$file = fopen("contacts.txt", "a");
       //fwrite($file, $message);// . "\n")
-      file_put_contents("contacts.txt", $message);
+      file_put_contents("contacts.txt", $message, FILE_APPEND);
       //fclose($file);
    }catch(Exception $ex){
       echo $ex->getMessage();
